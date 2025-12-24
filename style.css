@@ -124,7 +124,7 @@ body {
     border: 4px solid var(--accent);
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
     transition: transform 0.3s ease,
-    box-shadow 0.3s ease;
+        box-shadow 0.3s ease;
 }
 
 .home-image img:hover {
@@ -224,4 +224,95 @@ body {
 .contact-list li a:hover {
     background-color: rgba(56, 189, 248, 0.12);
     transform: translateX(6px);
+}
+
+#projects h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: var(--accent);
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.project-description {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.project-points {
+    padding-left: 20px;
+    margin-bottom: 18px;
+}
+
+.project-points li {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.project-status,
+.project-tech {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 6px;
+}
+
+.project-status strong,
+.project-tech strong {
+    color: var(--text-primary);
+}
+
+.project-links {
+    margin-top: 18px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+    color: var(--accent);
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    background-color: transparent;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: rgba(56, 189, 248, 0.12);
+    transform: translateY(-2px);
+}
+
+.project-links a.disabled {
+    opacity: 0.5;
+    pointer-events: none;
 }
